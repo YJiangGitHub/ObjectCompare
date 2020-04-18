@@ -1,0 +1,6 @@
+---
+JsonObjectA: {"Id":"244","code":"Connect","name":{"tuple":["Maya","Json"]},"Desc":{"name":{"name":"Jack","id":12,"desc":"男生2"},"id":12,"desc":"男生"},"type":[{"name":"Json","id":121,"desc":"女生"},{"name":"Maya","id":14,"desc":"可爱1"}]}
+JsonObjectB: {"Id":"244","code":"NotConnect","name":{"tuple":["Taya","Json"]},"Desc":{"name":{"name":"Jack","id":12,"desc":"男生1"},"id":12,"desc":"男生"},"type":[{"name":"Json","id":121,"desc":"女生"},{"name":"Taya","id":14,"desc":"1可爱"}]}
+
+JsonArrayA: [{"name":"Jack","id":[{"name":"Jack","id":1,"desc":"男生"},{"name":"Tony","id":14111,"desc":"可爱"}],"desc":"男生"},{"name":"Tony","id":141,"desc":"可爱"}]
+JsonArrayB: [{"name":"Json","id":[{"name":"Jack","id":1,"desc":"男生"},{"name":"Tony","id":14122,"desc":"可爱"}],"desc":"女生"},{"name":"Taya","id":14,"desc":"可爱"}]
