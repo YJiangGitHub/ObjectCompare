@@ -1,5 +1,6 @@
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,7 +11,7 @@ public class TestCompare {
 
     @BeforeTest
     public void initBefore(){
-        String datdFilePath = "src/test/yaml/CompareJsonUtils.yaml";
+        String datdFilePath = "src/test/yaml/CompareJson.yaml";
         this.mapTestData = LoadYaml.load(datdFilePath);
     }
 
@@ -23,8 +24,9 @@ public class TestCompare {
         JSONObject jsonObject1 = JSONObject.parseObject(jsonObjectA);
         JSONObject jsonObject2 = JSONObject.parseObject(jsonObjectB);
 
-        BaseResult baseResult = Compare.CompareFactory(jsonObject1, jsonObject2, null);
+        BaseResult baseResult = Compare.CompareFactory(jsonObject1, jsonObject2, "code,designation,hobby_id,desc");
         System.out.println("比对结果：" + JSONObject.toJSONString(baseResult));
+
     }
 
     @Test
@@ -42,6 +44,7 @@ public class TestCompare {
 
     @Test
     public void compareStringTest() {
+        // String
         String stringA = "IntelliJ IDEA 2019.2.4";
         String stringB = "IntelliJ IDEA 2019.2.4";
         BaseResult baseResult2 = Compare.CompareFactory(stringA, stringB, null);
@@ -50,10 +53,21 @@ public class TestCompare {
 
     @Test
     public void compareIntegerTest() {
+        // Integer
         Integer integerA = 9527;
         Integer integerB = 9521;
         BaseResult baseResult3 = Compare.CompareFactory(integerA, integerB, null);
 
         System.out.println("比对结果：" + JSONObject.toJSONString(baseResult3));
     }
+
+    @Test
+    public void compareLongTest() {
+        // Long
+        Long LongA = 9527L;
+        Long LongB = 9521L;
+        BaseResult baseResult4 = Compare.CompareFactory(LongA, LongB, null);
+        System.out.println("比对结果：" + JSONObject.toJSONString(baseResult4));
+    }
 }
+

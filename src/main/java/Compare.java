@@ -15,7 +15,7 @@ public class Compare {
      * @Description: 更新结果，错误数量计数
      * @Param: [parameter]
      * @Author: YJiang
-     * @DateTimeFormat: 2020/3/9
+     * @DateTimeFormat: 2020/3/8
      */
     private static void updateBaseResult(ResultDetail resultDetail) {
         // 错误数量统计
@@ -37,7 +37,7 @@ public class Compare {
      * @Param: [parameter]
      * @return: void
      * @Author: YJiang
-     * @DateTimeFormat: 2020/3/9
+     * @DateTimeFormat: 2020/3/8
      */
     private static void compareJson(String actualString, String expectString, String key, String prefix , String ignore) {
         boolean status = false;
@@ -65,7 +65,7 @@ public class Compare {
      * @Param: [parameter]
      * @return: void
      * @Author: YJiang
-     * @DateTimeFormat: 2020/3/9
+     * @DateTimeFormat: 2020/3/8
      */
     private static void compareJson(JSONObject actualJson, JSONObject expectJson, String key,String prefix, String ignore) {
         if (StringUtils.isBlank(prefix)){
@@ -85,7 +85,7 @@ public class Compare {
      * @Param: [parameter]
      * @return: void
      * @Author: YJiang
-     * @DateTimeFormat: 2020/3/9
+     * @DateTimeFormat: 2020/3/8
      */
     private static void compareJson(JSONArray actualJsonArray, JSONArray expectJsonArray, String key,String prefix, String ignore) {
         if (actualJsonArray != null && expectJsonArray != null) {
@@ -127,7 +127,7 @@ public class Compare {
      * @Param: [parameter]
      * @return: void
      * @Author: YJiang
-     * @DateTimeFormat: 2020/3/9
+     * @DateTimeFormat: 2020/3/8
      */
     private static void compareJson(Object actualJson, Object expectJson, String key,String prefix, String ignore) {
         if (actualJson != null && expectJson != null) {

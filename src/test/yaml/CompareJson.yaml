@@ -1,0 +1,8 @@
+---
+JsonObjectA: {"Id":"244","code":"Connect","regional":{"city":["青岛","南京"]},"person":{"base":{"name":"Jack","age":24,"sex":"男生"},"person_id":11,"desc":"学生"},"hobby":[{"designation":"basketball","hobby_id":121,"desc":"篮球"},{"designation":"football","hobby_id":14,"desc":"足球"}]}
+JsonObjectB: {"Id":"244","code":"NetConnect","regional":{"city":["青岛","镇江"]},"person":{"base":{"name":"Jack","age":25,"sex":"男生"},"person_id":12,"desc":"学生"},"hobby":[{"designation":"basketball","hobby_id":121,"desc":"篮球"},{"designation":"badminton","hobby_id":21,"desc":"羽毛球"}]}
+
+JsonArrayA: [{"Id":"244","code":"Connect","regional":{"city":["青岛","南京"]},"person":{"base":{"name":"Jack","age":24,"sex":"男生"},"person_id":11,"desc":"学生"}},{"name":"Tony","id":141,"desc":"可爱"}]
+JsonArrayB: [{"Id":"244","code":"NetConnect","regional":{"city":["青岛","镇江"]},"person":{"base":{"name":"Jack","age":25,"sex":"男生"},"person_id":12,"desc":"学生"}},{"name":"Tony","id":14,"desc":"可爱"}]
+
+
